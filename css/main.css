@@ -124,14 +124,13 @@ body {
 }
 
 #main .panel.intro .bottom img {
-  width: 150px;
+  width: 100px;
   object-fit: cover;
-  border: 1px solid #333333;
 }
 
 #main .panel.intro .bottom p {
-  font-family: 'Lato', 'Noto Sans KR';
-  font-size: 16px;
+  font-family: 'Pretendard', 'Noto Sans KR';
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
 }
