@@ -82,6 +82,8 @@ body {
   transition: color 0.3s ease;
 }
 
+
+
 /* 메인 */
 #main {
   width: 100%;
@@ -89,6 +91,7 @@ body {
 
 
 
+/* #intro */
 #main .panel.intro {
   width: 100%;
   padding: 13%;
@@ -141,6 +144,7 @@ body {
 
 
 
+/* #about */
 #main .panel.about {
   width: 100%;
   padding: 15%;
@@ -221,10 +225,12 @@ body {
 
 
 
+/* #project */
 #main .panel.project {
   margin-top: 5%;
   padding-top: 10%;
   width: 100%;
+  background-color: #FAFAFA;
 }
 
 #main .panel.project .inner {
@@ -243,11 +249,18 @@ body {
   margin-bottom: 5%;
   width: 500px;
   border: 1px solid #333333;
+  background-color: #FFF;
 }
 
-#main .panel.project .inner .list .item .image {}
+#main .panel.project .inner .list .item .image {
+  width: 100%;
+  margin-bottom: 3%;
+}
 
-#main .panel.project .inner .list .item .image img {}
+#main .panel.project .inner .list .item .image img {
+  width: 100%;
+  object-fit: cover;
+}
 
 #main .panel.project .inner .list .item .text {
   display: flex;
@@ -285,6 +298,7 @@ body {
 
 
 
+/* #design */
 #main .panel.design {
   padding: 13%;
   margin-top: 5%;
@@ -299,6 +313,7 @@ body {
 }
 
 
+/* #contact */
 #main .panel.contact {
   padding: 13%;
   font-family: 'Lato', 'Noto Sans KR';
