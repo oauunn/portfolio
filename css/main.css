@@ -3,13 +3,25 @@
 
 html,
 body {
-  height: auto;
+  width: 100%;
+  min-width: 1280px;
+  overflow-x: hidden;
+  height: auto; /* 원래 얘만 있었음 */
 }
 
 .panel {
-  height: 110vh;
+  width: 100%;
+  min-height: 100vh;
+  padding: 160px 200px;
+  position: relative;
+  /* scroll-snap-align: start;
   top: 0;
-  will-change: transform;
+  will-change: transform; */
+}
+
+.panel .inner {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .scroll-down {
@@ -22,12 +34,14 @@ body {
 
 /* 헤더 */
 #header {
-  padding: 1%;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 80px;
   z-index: 1000;
+  display: flex;
+  align-items: center;
   font-family: 'Lato', 'Noto Sans KR';
   font-weight: bold;
   color: #777777;
@@ -38,10 +52,12 @@ body {
 }
 
 #header .inner {
+  width: 100%;
+  max-width: calc(100% - 120px);
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 40px;
 }
 
 #header .inner h1 {
@@ -52,18 +68,17 @@ body {
 }
 
 #header .inner .nav {
-  position: relative;
+  position: relative; /* #header .inner .nav .nav-underline */
   display: flex;
-  justify-content: space-between;
+  gap: 60px;
   align-items: center;
-  gap: 4vw;
   line-height: 1.5;
   font-size: 16px;
 }
 
 #header .inner .nav .nav-underline {
-  position: absolute;
-  bottom: -70%;
+  position: absolute; /* #header .inner .nav */
+  bottom: -16px;
   left: 0;
   width: 10px;
   height: 10px;
@@ -93,34 +108,43 @@ body {
 
 /* #intro */
 #main .panel.intro {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 100%;
   padding: 13%;
   margin: 0 auto;
   text-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 #main .panel.intro h1 {
-  position: relative;
-  /* #main .panel.intro img */
+  /* position: relative; */ /* #main .panel.intro img */
   font-family: 'Zalando Sans Expanded';
   font-size: 210px;
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 40px;
   color: #333333;
+  margin-bottom: 40px;
+  /* margin-bottom: 15%; */
 }
 
 #main .panel.intro h1:hover {
   text-decoration: underline;
 }
 
+#main .panel.intro img {
+  width: 100px;
+  object-fit: cover;
+}
+
 #main .panel.intro .bottom {
-  position: absolute;
-  /* #main .panel.intro h1 */
-  bottom: 13%;
-  left: 5%;
-  transform: translate(-5%, -13%);
+  position: absolute; /* #main .panel.intro h1 */
+  bottom: 40px;
+  left: 60px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -136,10 +160,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-}
-
-#main .panel.intro .bottom p:hover {
-  text-decoration: underline;
 }
 
 
@@ -227,8 +247,7 @@ body {
 
 /* #project */
 #main .panel.project {
-  margin-top: 5%;
-  padding-top: 10%;
+  margin-top: 15%;
   width: 100%;
   background-color: #FAFAFA;
 }
@@ -246,7 +265,7 @@ body {
 
 #main .panel.project .inner .list .item {
   padding: 1%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   width: 500px;
   border: 1px solid #333333;
   background-color: #FFF;
@@ -315,16 +334,16 @@ body {
 
 /* #contact */
 #main .panel.contact {
-  padding: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-family: 'Lato', 'Noto Sans KR';
   color: #333333;
 }
 #main .panel.contact .inner {
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 300px;
 }
 #main .panel.contact .inner h2 {
   margin-top: 10%;
@@ -352,14 +371,14 @@ body {
 /* 푸터 */
 #footer {
   width: 100%;
-  padding: 1%;
-  text-align: center;
+  height: 60px;
+  display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #333333;
 }
 
 #footer p {
-  display: inline-block;
   font-family: 'Source Code Pro', 'Noto Sans KR';
   font-size: 14px;
   line-height: 1.5;
