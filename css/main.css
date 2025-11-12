@@ -361,12 +361,19 @@ body {
   margin-bottom: 100px;
   color: #333333;
 }
-
-#main .panel.design .inner .item {
+#main .panel.design .inner .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#main .panel.design .inner .list .item {
   width: 400px;
   border: 1px solid #333;
 }
-#main .panel.design .inner .item img {
+#main .panel.design .inner .list .item img {
   width: 100%;
   object-fit: cover;
 }
