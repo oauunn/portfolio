@@ -121,9 +121,7 @@ body {
   text-align: center;
   align-items: center; */
 }
-
 #main .panel.intro h1 {
-  /* position: relative; */ /* #main .panel.intro img */
   font-family: 'Zalando Sans Expanded';
   font-size: 210px;
   font-weight: bold;
@@ -134,11 +132,6 @@ body {
 
 #main .panel.intro h1:hover {
   text-decoration: underline;
-}
-
-#main .panel.intro img {
-  width: 100px;
-  object-fit: cover;
 }
 
 #main .panel.intro .bottom {
@@ -347,12 +340,16 @@ body {
 /* #design */
 #main .panel.design {
     width: 100%;
+    position: relative;
     margin-bottom: 200px;
-}
-
-#main .panel.design .inner {
-  width: calc(100% - 300px);
-  margin: 0 auto;
+  }
+  
+  #main .panel.design .inner {
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    margin-top: 200px;
 }
 
 #main .panel.design .inner h1 {
