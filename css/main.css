@@ -13,7 +13,7 @@ body {
 .panel {
   width: 100%;
   min-height: 100vh;
-  padding: calc(160px + 80px) 200px 160px;
+  padding: calc(160px + 80px) 160px;
   position: relative;
 /*   scroll-snap-align: start;
   top: 0;
@@ -114,6 +114,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 200px;
   /* width: 100%;
   padding: 13%;
   margin: 0 auto;
@@ -166,7 +167,7 @@ body {
 
 /* #about */
 #main .panel.about {
-  margin-bottom: 110px;
+  margin-bottom: 200px;
 }
 
 #main .panel.about .inner {
@@ -249,8 +250,17 @@ body {
 #main .panel.project {
   width: 100%;
   position: relative;
+  margin-bottom: 200px;
 }
-
+#main .panel.project .inner h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Zalando Sans Expanded';
+  /* letter-spacing: 5px; */
+  text-align: center;
+  margin-bottom: 100px;
+  color: #333333;
+}
 #main .panel.project .inner {
   width: calc(100% - 300px);
   margin: 0 auto;
@@ -266,7 +276,7 @@ body {
 
 #main .panel.project .inner .list .item {
   padding: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   width: 500px;
   border: 1px solid #333333;
   background-color: #FFF;
@@ -296,7 +306,9 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
-
+#main .panel.project .inner .list .item .text h3:hover {
+  color: orangered;
+}
 #main .panel.project .inner .list .item .text h4 {
   font-size: 16px;
 }
@@ -334,14 +346,32 @@ body {
 
 /* #design */
 #main .panel.design {
+    width: 100%;
+    margin-bottom: 200px;
 }
+
 #main .panel.design .inner {
-  display: flex;
-  width: 100%;
+  width: calc(100% - 300px);
+  margin: 0 auto;
 }
+
+#main .panel.design .inner h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Zalando Sans Expanded';
+  /* letter-spacing: 5px; */
+  text-align: center;
+  margin-bottom: 100px;
+  color: #333333;
+}
+
 #main .panel.design .inner .item {
-  width: 30%;
+  width: 400px;
   border: 1px solid #333;
+}
+#main .panel.design .inner .item img {
+  width: 100%;
+  object-fit: cover;
 }
 
 
@@ -366,6 +396,8 @@ body {
   line-height: 1.5;
 }
 #main .panel.contact .inner .icon {
+  position: relative;
+  bottom: -300px;
   display: flex;
   gap: 100px;
   justify-content: center;
