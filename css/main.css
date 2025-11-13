@@ -363,8 +363,7 @@ body {
 }
 #main .panel.design .inner .list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
