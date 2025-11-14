@@ -245,6 +245,13 @@ body {
   position: relative;
   margin-bottom: 200px;
 }
+
+#main .panel.project .inner {
+  width: calc(100% - 300px);
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+}
 #main .panel.project .inner h1 {
   font-size: 40px;
   font-weight: bold;
@@ -254,11 +261,21 @@ body {
   margin-bottom: 100px;
   color: #333333;
 }
-#main .panel.project .inner {
-  width: calc(100% - 300px);
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
+#main .panel.project .inner .menu ul {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+#main .panel.project .inner .menu ul li {
+  padding: 10px 20px;
+  background-color: #bbbbbb;
+  color: #333333;
+  border: 1px solid #333333;
+  border-radius: 20px;
+}
+#main .panel.project .inner .menu ul li:first-child {
+  background-color: #a52a2a;
+  color: #FFF;
 }
 
 #main .panel.project .inner .list {
@@ -331,7 +348,7 @@ body {
   border-radius: 10px;
 }
 #main .panel.project .inner .list .item .text .icon ul li:first-child {
-  background-color: brown;
+  background-color: #a52a2a;
   color: #FFF;
 }
 
