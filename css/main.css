@@ -409,7 +409,6 @@ body {
 }
 
 
-
 /* #contact */
 #main .panel.contact {
   margin-top: 200px;
@@ -436,7 +435,7 @@ body {
 
 #main .panel.contact .inner .icon {
   position: relative;
-  bottom: -300px;
+  bottom: -200px;
   display: flex;
   gap: 100px;
   justify-content: center;
